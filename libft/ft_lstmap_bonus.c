@@ -6,7 +6,7 @@
 /*   By: abolea <abolea@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 15:38:30 by abolea            #+#    #+#             */
-/*   Updated: 2023/11/17 16:29:09 by abolea           ###   ########.fr       */
+/*   Updated: 2023/11/17 18:04:54 by abolea           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		if (newelem == NULL)
 		{
 			ft_lstclear(&list, del);
+			del(result);
 			return (NULL);
 		}
 		ft_lstadd_back(&list, newelem);
