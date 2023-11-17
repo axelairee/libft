@@ -6,7 +6,7 @@
 /*   By: abolea <abolea@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 13:39:48 by abolea            #+#    #+#             */
-/*   Updated: 2023/11/16 01:35:57 by abolea           ###   ########.fr       */
+/*   Updated: 2023/11/17 11:38:44 by abolea           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,17 +71,14 @@ char	**ft_split(char const *s, char c)
 	col = 0;
 	result = malloc((words + 1) * sizeof(char *));
 	if (!result)
-		return (0);
+		return (NULL);
 	while (col < words)
 	{
 		while (*s == c)
 			s++;
 		result[col] = ft_substr(s, 0, ft_strclen(s, c));
 		if (!result[col])
-		{
 			return (ft_freesplit(result));
-			return (NULL);
-		}
 		s += ft_strclen(s, c);
 		col++;
 	}

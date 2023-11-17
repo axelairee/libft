@@ -6,7 +6,7 @@
 /*   By: abolea <abolea@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 09:20:29 by abolea            #+#    #+#             */
-/*   Updated: 2023/11/13 15:29:07 by abolea           ###   ########.fr       */
+/*   Updated: 2023/11/17 17:32:04 by abolea           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,28 @@
 
 int	ft_atoi(const char *nptr)
 {
-	int	i;
 	int	sign;
 	int	nb;
 
-	i = 0;
 	sign = 1;
 	nb = 0;
-	while (nptr[i] == ' ' || nptr[i] == '\f' || nptr[i] == '\n' \
-			|| nptr[i] == '\r' || nptr[i] == '\t' || nptr[i] == '\v')
-		i++;
-	if (nptr[i] == '-' || nptr[i] == '+')
+	while (*nptr == ' ' || (*nptr >= 9 && *nptr <= 13))
+		nptr++;
+	if (*nptr == '-')
+		sign *= -1;
+	if (*nptr == '-' || *nptr == '+')
+		nptr++;
+	while (*nptr >= '0' && *nptr <= '9')
 	{
-		if (nptr[i] == '-')
-			sign *= -1;
-		i++;
-	}
-	while (nptr[i] >= '0' && nptr[i] <= '9')
-	{
-		nb = nptr[i] - '0' + nb * 10;
-		i++;
+		if (nb > (LONG_MAX - (*nptr - '0')))
+		{
+			if (sign == 1)
+				return (-1);
+			else
+				return (0);
+		}
+		nb = nb * 10 + *nptr - '0';
+		nptr++;
 	}
 	return (nb * sign);
 }
@@ -43,6 +45,7 @@ int	ft_atoi(const char *nptr)
 
 int	main(void)
 {
-	printf("%d", ft_atoi("  +4add2"));
+	printf("%d\n", ft_atoi("999999999999999999999999999"));
+	printf("%d", atoi("999999999999999999999999999"));
 }
 */
