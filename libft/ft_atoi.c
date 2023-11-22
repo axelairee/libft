@@ -6,7 +6,7 @@
 /*   By: abolea <abolea@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 09:20:29 by abolea            #+#    #+#             */
-/*   Updated: 2023/11/17 17:42:52 by abolea           ###   ########.fr       */
+/*   Updated: 2023/11/21 10:27:53 by abolea           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,14 +39,3 @@ int	ft_atoi(const char *nptr)
 	}
 	return ((int)(nb * sign));
 }
-
-/*
-#include <stdlib.h>
-#include <stdio.h>
-
-int	main(void)
-{
-	printf("%d\n", ft_atoi("999"));
-	printf("%d", atoi("999"));
-}
-*/

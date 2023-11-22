@@ -6,11 +6,9 @@
 /*   By: abolea <abolea@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 10:15:55 by abolea            #+#    #+#             */
-/*   Updated: 2023/11/10 16:51:18 by abolea           ###   ########.fr       */
+/*   Updated: 2023/11/21 10:30:10 by abolea           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_toupper(int c)
 {
@@ -18,11 +16,3 @@ int	ft_toupper(int c)
 		c -= 32;
 	return (c);
 }
-
-/*
-#include<stdio.h>
-int	main(void)
-{
-	printf("%d\n", ft_toupper('a'));
-}
-*/

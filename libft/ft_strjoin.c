@@ -6,7 +6,7 @@
 /*   By: abolea <abolea@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 18:22:07 by abolea            #+#    #+#             */
-/*   Updated: 2023/11/13 18:57:57 by abolea           ###   ########.fr       */
+/*   Updated: 2023/11/20 18:17:15 by abolea           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,11 +34,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		s3[i++] = s2[j++];
 	return (s3);
 }
-
-/*
-#include <stdio.h>
-int    main(void)
-{
-    printf("%s", ft_strjoin("hello", " world"));
-}
-*/

@@ -6,11 +6,9 @@
 /*   By: abolea <abolea@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 18:12:08 by abolea            #+#    #+#             */
-/*   Updated: 2023/11/13 14:49:23 by abolea           ###   ########.fr       */
+/*   Updated: 2023/11/21 10:29:52 by abolea           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {
@@ -27,11 +25,3 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *)s);
 	return (l);
 }
-/*
-#include <stdio.h>
-int     main(void)
-{
-        printf("%s", ft_strrchr("helllo", 'z'));
-        return (0);
-}
-*/

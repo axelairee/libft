@@ -6,7 +6,7 @@
 /*   By: abolea <abolea@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 15:23:13 by abolea            #+#    #+#             */
-/*   Updated: 2023/11/13 14:56:54 by abolea           ###   ########.fr       */
+/*   Updated: 2023/11/20 18:17:05 by abolea           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,3 @@ char	*ft_strdup(const char *s)
 	s2[i] = '\0';
 	return (s2);
 }
-/*
-#include<stdio.h>
-int     main(void)
-{
-        printf("%s", ft_strdup("hello"));
-}
-*/

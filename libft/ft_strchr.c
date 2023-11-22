@@ -6,7 +6,7 @@
 /*   By: abolea <abolea@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 11:36:58 by abolea            #+#    #+#             */
-/*   Updated: 2023/11/13 14:52:20 by abolea           ###   ########.fr       */
+/*   Updated: 2023/11/21 10:29:04 by abolea           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s);
 	return (NULL);
 }
-/*
-#include <stdio.h>
-int	main(void)
-{
-	printf("%s", ft_strchr("tripouille", 0));
-	return (0);
-}
-*/

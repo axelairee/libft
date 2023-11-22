@@ -6,7 +6,7 @@
 /*   By: abolea <abolea@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 15:21:46 by abolea            #+#    #+#             */
-/*   Updated: 2023/11/09 23:30:20 by abolea           ###   ########.fr       */
+/*   Updated: 2023/11/21 10:28:05 by abolea           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	char			*tmp;
-	unsigned int	i;
+	char		*tmp;
+	size_t		i;
 
 	i = 0;
 	tmp = (char *)s;
@@ -25,14 +25,3 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
-
-/*
-#include <stdio.h>
-int	main(void)
-{
-	char str[] = "abcd";
-	ft_bzero(str, 0);
-	printf("%s", str);
-	return (0);
-}
-*/

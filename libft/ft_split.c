@@ -6,19 +6,21 @@
 /*   By: abolea <abolea@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 13:39:48 by abolea            #+#    #+#             */
-/*   Updated: 2023/11/17 11:38:44 by abolea           ###   ########.fr       */
+/*   Updated: 2023/11/22 17:12:36 by abolea           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_countword(const char *s, char c)
+static size_t	ft_countword(const char *s, char c)
 {
 	size_t	i;
 	size_t	words;
 
 	i = 0;
 	words = 0;
+	if (!s)
+		return (NULL);
 	while (s[i])
 	{
 		if (s[i] != c)
@@ -33,7 +35,7 @@ size_t	ft_countword(const char *s, char c)
 	return (words);
 }
 
-void	*ft_freesplit(char **res)
+static void	*ft_freesplit(char **res)
 {
 	size_t	col;
 
@@ -47,7 +49,7 @@ void	*ft_freesplit(char **res)
 	return (NULL);
 }
 
-size_t	ft_strclen(char const *s, char c)
+static size_t	ft_strclen(char const *s, char c)
 {
 	size_t	i;
 	size_t	j;
@@ -85,23 +87,3 @@ char	**ft_split(char const *s, char c)
 	result[col] = NULL;
 	return (result);
 }
-/*
-#include <stdio.h>
-int main ()
-{
-    const char *input_string = "         ";
-
-    char delimiter = ' ';
-
-    char **result = ft_split(input_string, delimiter);
-
-    if (result == NULL) {
-        printf("Erreur d'allocation mémoire.\n");
-        return 1; 
-    }
-    printf("Résultat du découpage :\n");
-    for (int i = 0; result[i] != NULL; i++) {
-        printf("%s\n", result[i]);
-    }
-}
-*/

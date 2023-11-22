@@ -6,7 +6,7 @@
 /*   By: abolea <abolea@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 12:29:03 by abolea            #+#    #+#             */
-/*   Updated: 2023/11/13 15:10:39 by abolea           ###   ########.fr       */
+/*   Updated: 2023/11/20 18:17:44 by abolea           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	unsigned int	i;
-	unsigned int	j;
+	size_t	i;
+	size_t	j;
 
 	i = 0;
 	j = 0;
@@ -36,12 +36,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-/*
-#include <stdio.h>
-int     main(void)
-{
-    char str1[50] = "aaabcabcd";
-    char str2[50] = "cd";
-    printf("%s", ft_strnstr(str1, str2, 8));
-}
-*/

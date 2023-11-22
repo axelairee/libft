@@ -6,11 +6,9 @@
 /*   By: abolea <abolea@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 11:34:59 by abolea            #+#    #+#             */
-/*   Updated: 2023/11/13 15:26:37 by abolea           ###   ########.fr       */
+/*   Updated: 2023/11/21 10:30:02 by abolea           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_tolower(int c)
 {
@@ -18,11 +16,3 @@ int	ft_tolower(int c)
 		c += 32;
 	return (c);
 }
-
-/*
-#include<stdio.h>
-int	main(void)
-{
-	printf("%d\n", ft_tolower('a'));
-}
-*/

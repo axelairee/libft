@@ -6,7 +6,7 @@
 /*   By: abolea <abolea@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 15:09:58 by abolea            #+#    #+#             */
-/*   Updated: 2023/11/13 18:59:21 by abolea           ###   ########.fr       */
+/*   Updated: 2023/11/20 18:17:56 by abolea           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,10 +33,3 @@ char	*ft_substr(char const *s, unsigned int start, unsigned int len)
 		s2[i++] = s[start++];
 	return (s2);
 }
-/*
-#include <stdio.h>
-int    main(void)
-{
-    printf("%s", ft_substr("i just want this part #############", 5, 10));
-}
-*/

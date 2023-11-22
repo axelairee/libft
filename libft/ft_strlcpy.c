@@ -6,7 +6,7 @@
 /*   By: abolea <abolea@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 10:37:15 by abolea            #+#    #+#             */
-/*   Updated: 2023/11/10 01:47:24 by abolea           ###   ########.fr       */
+/*   Updated: 2023/11/20 18:17:27 by abolea           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,17 +33,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	}
 	return (size - n);
 }
-
-/*
-#include <bsd/string.h>
-#include <stdio.h>
-int main()
-{
-    char source[50] = "coucou";
-    char dest[50] = "A";
-    printf("%ld\n",ft_strlcpy(dest,source,0));
-    printf("%s\n", dest);
-//	printf("%ld\n",strlcpy(dest,source,0));
-//    printf("%s", dest);
-}
-*/

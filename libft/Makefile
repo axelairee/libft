@@ -6,11 +6,11 @@
 #    By: abolea <abolea@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/08 16:48:52 by abolea            #+#    #+#              #
-#    Updated: 2023/11/17 15:38:41 by abolea           ###   ########.fr        #
+#    Updated: 2023/11/21 18:10:58 by abolea           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-CC = gcc
+CC = cc
 FLAGS = -Wall -Werror -Wextra
 NAME = libft.a
 SRC = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
@@ -30,10 +30,10 @@ OBJ_BONUS = $(SRC_BONUS:.c=.o)
 
 all : $(NAME)
 
-%.o : %.c 
+%.o : %.c libft.h
 	$(CC) -o $@ -c $< $(FLAGS)
 
-$(NAME): $(OBJ)
+$(NAME): $(OBJ) libft.h
 	ar rc $(NAME) $(OBJ)
 
 clean :
@@ -44,5 +44,5 @@ fclean : clean
 
 re : fclean all
 
-bonus : $(OBJ_BONUS)
-	ar rc $(NAME) $(OBJ_BONUS)
+bonus : $(OBJ_BONUS) $(OBJ) libft.h
+	ar rc $(NAME) $(OBJ_BONUS) $(OBJ)

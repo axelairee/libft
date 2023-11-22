@@ -6,7 +6,7 @@
 /*   By: abolea <abolea@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 11:58:31 by abolea            #+#    #+#             */
-/*   Updated: 2023/11/13 14:44:15 by abolea           ###   ########.fr       */
+/*   Updated: 2023/11/20 18:15:10 by abolea           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-/*
-#include <stdio.h>
-int     main(void)
-{
-    printf("%p", memchr("hello", 'l', 5));
-	return (0);
-}
-*/

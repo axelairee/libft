@@ -6,7 +6,7 @@
 /*   By: abolea <abolea@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 15:58:20 by abolea            #+#    #+#             */
-/*   Updated: 2023/11/13 14:52:05 by abolea           ###   ########.fr       */
+/*   Updated: 2023/11/20 18:17:40 by abolea           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,13 +27,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		i++;
 	return (ptr1[i] - ptr2[i]);
 }
-
-/*
-#include <stdio.h>
-int	main(void)
-{
-	char str1[50] = "";
-	char str2[50] = "1";
-	printf("%d", strncmp(str1, str2, 3));
-}
-*/

@@ -6,11 +6,9 @@
 /*   By: abolea <abolea@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 16:22:11 by abolea            #+#    #+#             */
-/*   Updated: 2023/11/08 18:48:53 by abolea           ###   ########.fr       */
+/*   Updated: 2023/11/21 10:27:39 by abolea           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isdigit(int c)
 {
@@ -19,12 +17,3 @@ int	ft_isdigit(int c)
 	else
 		return (0);
 }
-
-/*
-#include<stdio.h>
-
-int     main(void)
-{       
-        printf("%d", ft_isdigit('0'));
-}       
-*/

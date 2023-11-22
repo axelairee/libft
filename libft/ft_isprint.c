@@ -6,11 +6,9 @@
 /*   By: abolea <abolea@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 16:51:38 by abolea            #+#    #+#             */
-/*   Updated: 2023/11/08 18:48:58 by abolea           ###   ########.fr       */
+/*   Updated: 2023/11/21 10:27:44 by abolea           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_isprint(int c)
 {
@@ -19,12 +17,3 @@ int	ft_isprint(int c)
 	else
 		return (0);
 }
-
-/*
-#include<stdio.h>
-
-int     main(void)
-{       
-        printf("%d", ft_isprint('0'));
-}       
-*/

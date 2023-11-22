@@ -6,7 +6,7 @@
 /*   By: abolea <abolea@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 12:37:28 by abolea            #+#    #+#             */
-/*   Updated: 2023/11/13 14:50:46 by abolea           ###   ########.fr       */
+/*   Updated: 2023/11/20 18:16:39 by abolea           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memset(void *s, int c, size_t n)
 {
-	unsigned int	i;
+	size_t			i;
 	char			*tmp;
 
 	tmp = (char *)s;
@@ -26,13 +26,3 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
-/*
-#include <stdio.h>
-int	main(void)
-{
-	char str[] = "test";
-	ft_memset(str, '@', 1);
-	printf("%s", str);
-	return (0);
-}
-*/

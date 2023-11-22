@@ -6,13 +6,13 @@
 /*   By: abolea <abolea@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 19:04:38 by abolea            #+#    #+#             */
-/*   Updated: 2023/11/15 22:58:05 by abolea           ###   ########.fr       */
+/*   Updated: 2023/11/21 13:18:54 by abolea           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_findnb(int n)
+static int	ft_findnb(int n)
 {
 	int	nb;
 
@@ -29,7 +29,7 @@ int	ft_findnb(int n)
 	return (nb);
 }
 
-char	*ft_strrev(char *s)
+static char	*ft_strrev(char *s)
 {
 	size_t	i;
 	size_t	j;
@@ -48,7 +48,7 @@ char	*ft_strrev(char *s)
 	return (s);
 }
 
-char	*ft_fill_res(char *result, int i, int n, int nb_finder)
+static char	*ft_fill_res(char *result, int i, int n, int nb_finder)
 {
 	while (nb_finder > i)
 	{
@@ -85,10 +85,3 @@ char	*ft_itoa(int n)
 		result[nb_finder] = '-';
 	return (ft_strrev(result));
 }
-/*
-#include <stdio.h>
-int    main(void)
-{
-    printf("%s", ft_itoa(-2147483648));
-}
-*/

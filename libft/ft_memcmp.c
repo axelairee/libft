@@ -6,7 +6,7 @@
 /*   By: abolea <abolea@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 12:11:29 by abolea            #+#    #+#             */
-/*   Updated: 2023/11/13 14:43:30 by abolea           ###   ########.fr       */
+/*   Updated: 2023/11/20 18:15:15 by abolea           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,12 +30,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-/*
-#include <stdio.h>
-int	main(void)
-{
-	char str1[50] = "hello";
-	char str2[50] = "hello";
-	printf("%d", ft_memcmp(str1, str2, 5));
-}
-*/
